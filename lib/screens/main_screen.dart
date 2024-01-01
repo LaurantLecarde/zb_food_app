@@ -36,9 +36,9 @@ class _MainScreenState extends State<MainScreen> {
           child: Theme(
             data: Theme.of(context).copyWith(canvasColor: Colors.green[900]),
             child: BottomNavigationBar(
-              onTap: (i){
+              onTap: (t){
                 setState(() {
-                  _activeIndex = i;
+                  _activeIndex = t;
                 });
               },
               items: const [
